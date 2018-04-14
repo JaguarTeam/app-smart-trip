@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FormBuilder, Validators } from '@angular/forms';
+import { InicioPage } from '../inicio/inicio';
 
 @Component({
   selector: 'page-home',
@@ -29,6 +30,7 @@ export class HomePage {
 
   doLogin() {
    console.log("doing some login stuffs");
+   this.nav.setRoot(InicioPage);
   }
 
 }
