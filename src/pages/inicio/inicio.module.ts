@@ -11,3 +11,4 @@ import { InicioPage } from './inicio';
   ],
 })
 export class InicioPageModule {}
+ 
