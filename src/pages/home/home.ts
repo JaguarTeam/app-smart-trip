@@ -28,7 +28,7 @@ export class HomePage {
   }
 
   doLogin() {
-   
+   console.log("doing some login stuffs");
   }
 
 }
