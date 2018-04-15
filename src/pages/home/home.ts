@@ -8,7 +8,7 @@ import { InicioPage } from '../inicio/inicio';
   templateUrl: 'home.html'
 })
 export class HomePage {
-
+  splash = true;
   backgrounds = [
     'assets/img/background/background-1.jpg',
     'assets/img/background/background-2.jpg',
@@ -21,7 +21,7 @@ export class HomePage {
   }
 
   ionViewDidLoad() {
-    console.log('Hello LoginBackgroundSlider Page');
+    setTimeout(() => this.splash = false, 3000);
   }
 
   openResetPassword() {

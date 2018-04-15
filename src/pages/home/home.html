@@ -1,3 +1,11 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/imgs/splash.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
 <ion-header no-border>
   <ion-navbar transparent>
   </ion-navbar> 
@@ -17,7 +25,7 @@
       <ion-item>
         <ion-input type="password" placeholder="Password"></ion-input>
       </ion-item>
-      <button ion-button round margin color="danger">LOGIN</button>
+      <button ion-button round margin color="#1083FF">LOGIN</button>
       <p (click)="openResetPassword()"><strong>Forgot your password?</strong></p>
     </form>
   </div>
