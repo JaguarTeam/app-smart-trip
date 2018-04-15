@@ -7,12 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {InicioPage} from '../pages/inicio/inicio';
-<<<<<<< HEAD
 import {MonederoPage} from '../pages/monedero/monedero';
-=======
-import { UsuarioProvider } from '../providers/usuario/usuario';
-
->>>>>>> origin/master
+ import {UsuarioProvider} from '../providers/usuario/usuario';
 @NgModule({
   declarations: [
     MyApp,
