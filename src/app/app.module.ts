@@ -7,7 +7,12 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {InicioPage} from '../pages/inicio/inicio';
+<<<<<<< HEAD
 import {MonederoPage} from '../pages/monedero/monedero';
+=======
+import { UsuarioProvider } from '../providers/usuario/usuario';
+
+>>>>>>> origin/master
 @NgModule({
   declarations: [
     MyApp,
@@ -29,7 +34,8 @@ import {MonederoPage} from '../pages/monedero/monedero';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UsuarioProvider
   ]
 })
 export class AppModule {}
