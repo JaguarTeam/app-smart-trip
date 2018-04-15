@@ -8,13 +8,19 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {InicioPage} from '../pages/inicio/inicio';
 import {MonederoPage} from '../pages/monedero/monedero';
+
+import {GuardadosPage} from '../pages/guardados/guardados';
+
  import {UsuarioProvider} from '../providers/usuario/usuario';
+import { HistorialProvider } from '../providers/historial/historial';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     InicioPage,
-    MonederoPage
+    MonederoPage,
+    GuardadosPage
   ],
   imports: [
     BrowserModule,
@@ -25,13 +31,16 @@ import {MonederoPage} from '../pages/monedero/monedero';
     MyApp,
     HomePage,
     InicioPage,
-    MonederoPage
+    MonederoPage,
+    GuardadosPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    UsuarioProvider
+    UsuarioProvider,
+    HistorialProvider,
+    BarcodeScanner
   ]
 })
 export class AppModule {}
