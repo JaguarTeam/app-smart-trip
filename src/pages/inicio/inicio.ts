@@ -66,7 +66,7 @@ export class InicioPage {
        console.log("format:", barcodeData.format );
        console.log("cancelled:", barcodeData.cancelled );
 
-       if( barcodeData.cancelled == 0 && barcodeData.text != null ){
+       if( !barcodeData.cancelled && barcodeData.text != null ){
          this._historialService.agregar_historial( barcodeData.text  );
        }
 
