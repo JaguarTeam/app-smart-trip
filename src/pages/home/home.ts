@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 import { FormBuilder, Validators } from '@angular/forms';
 import { InicioPage } from '../inicio/inicio';
 
-@Component({//juancarlos password de la base de datos
+@Component({//juancarlos password de la base de datos 
   selector: 'page-home',
   templateUrl: 'home.html'
 })
